@@ -43,7 +43,10 @@ export class HomeComponent implements OnInit {
             mission_patch_small: data.links.mission_patch
           };
           if (singleData.land_success == null) {
-            singleData.land_success = 'Not Available';
+            singleData.land_success = 'NA';
+          }
+          if (singleData.launch_success == null) {
+            singleData.launch_success = 'NA';
           }
           this.spaceData.push(singleData);
         }// Next callback

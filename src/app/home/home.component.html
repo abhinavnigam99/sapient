@@ -43,8 +43,8 @@
                   class='pad10 grey-back card-img-top' [alt]="item.mission_name">
               </app-custom-image>
               <div class="card-body" style="padding:0px">
-                <h5 class="blue-heading bold-text card-title">{{item.mission_name}}
-                  #{{item.flight_number}}</h5>
+                <p class="blue-heading bold-text card-title">{{item.mission_name}}
+                  #{{item.flight_number}}</p>
                 <p class="card-text"><b>Mission Ids: </b></p>
                 <ul>
                   <li class='blue-heading' *ngFor='let id of item.mission_id'>{{id}}</li>
