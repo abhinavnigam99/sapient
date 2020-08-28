@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand">SpacEx Launch Programs</a>
 </nav>
-<div class="jumbotron">
+<div class="custom-jumbotron jumbotron">
   <div class='grey-back media-display'>
     <div class="media-width-filter">
-      <div class="pad10 white-back">
+      <div class="pad10 white-back margin10" style="margin-left: 10px;">
         <p class='text-decorate'><b>FILTERS</b></p>
         <p class='text-decorate'>LAUNCH YEAR</p>
         <div class="center-align row">
@@ -33,13 +33,15 @@
         </div>
       </div>
     </div>
-    <div class="media-width-content">
+    <div>
       <div class="container">
         <div class="row">
-          <div *ngFor="let item of spaceData" class='col-sm-12 col-md-6 col-lg-3 col-xl-3'>
+          <div *ngFor="let item of spaceData" class='margin10 col-sm-12 col-md-6 col-lg-3 col-xl-3 d-flex'>
             <div class="pad10 round card">
-              <img [src]="item.mission_patch_small==null? 'assets/no-image.jpg':item.mission_patch_small"
-                class='pad10 grey-back card-img-top' [alt]="item.mission_name">
+              <app-custom-image>
+                <img *ngIf [src]="item.mission_patch_small==null? 'assets/no-image.jpg':item.mission_patch_small"
+                  class='pad10 grey-back card-img-top' [alt]="item.mission_name">
+              </app-custom-image>
               <div class="card-body" style="padding:0px">
                 <h5 class="blue-heading bold-text card-title">{{item.mission_name}}
                   #{{item.flight_number}}</h5>
@@ -50,7 +52,8 @@
                 <p class="bold-text card-text">Launch Year: <span class="blue-heading">{{item.launch_year}}</span></p>
                 <p class="bold-text card-text">Successful Launch: <span
                     class="blue-heading">{{item.launch_success}}</span></p>
-                <p class="bold-text card-text">Landing Site: <span class="blue-heading">{{item.site_id}}</span></p>
+                <p class="bold-text card-text">Landing Success: <span class="blue-heading">{{item.land_success}}</span>
+                </p>
               </div>
             </div>
           </div>

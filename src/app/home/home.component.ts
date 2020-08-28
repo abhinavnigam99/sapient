@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   constructor(private httpService: HttpService, private SpinnerService: NgxSpinnerService) { }
 
   ngOnInit() {
-    for (let i = 2006; i < 2020; i++) {
+    for (let i = 2006; i <= 2020; i++) {
       this.year.push(i.toString());
     }
     this.generateUrl(this.dataURL);
@@ -39,10 +39,12 @@ export class HomeComponent implements OnInit {
             mission_id: data.mission_id,
             launch_year: data.launch_year,
             launch_success: data.launch_success,
-            site_id: data.launch_site.site_id,
-            mission_patch: data.links.mission_patch,
+            land_success: data.rocket.first_stage.cores[0].land_success,
             mission_patch_small: data.links.mission_patch
           };
+          if (singleData.land_success == null) {
+            singleData.land_success = 'Not Available';
+          }
           this.spaceData.push(singleData);
         }// Next callback
         console.log(this.spaceData);
