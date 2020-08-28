@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1598621533436,
+  "timestamp": 1598625658906,
   "index": "https://abhinavnigam99.github.io/sapient/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://abhinavnigam99.github.io/sapient/favicon.ico",
         "https://abhinavnigam99.github.io/sapient/index.html",
-        "https://abhinavnigam99.github.io/sapient/main-es2015.81b841159331c34d029a.js",
-        "https://abhinavnigam99.github.io/sapient/main-es5.81b841159331c34d029a.js",
+        "https://abhinavnigam99.github.io/sapient/main-es2015.ca25a4fddd09dcf5e4a4.js",
+        "https://abhinavnigam99.github.io/sapient/main-es5.ca25a4fddd09dcf5e4a4.js",
         "https://abhinavnigam99.github.io/sapient/manifest.webmanifest",
         "https://abhinavnigam99.github.io/sapient/polyfills-es2015.ffa9bb4e015925544f91.js",
         "https://abhinavnigam99.github.io/sapient/polyfills-es5.0290b245fbcca09184ac.js",
@@ -52,9 +52,9 @@
     "https://abhinavnigam99.github.io/sapient/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://abhinavnigam99.github.io/sapient/assets/no-image.jpg": "14516d86772202964ae5bd0316da94304ed9d04e",
     "https://abhinavnigam99.github.io/sapient/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://abhinavnigam99.github.io/sapient/index.html": "4b9b64fbc53ce1311bc6b6567b4cf9ded08d22bc",
-    "https://abhinavnigam99.github.io/sapient/main-es2015.81b841159331c34d029a.js": "fd33481512ffff4ea6985670783ba46e5a07a509",
-    "https://abhinavnigam99.github.io/sapient/main-es5.81b841159331c34d029a.js": "5649fdf47f7c22339dbaea1c067382e3effdb167",
+    "https://abhinavnigam99.github.io/sapient/index.html": "47d25ffaf7cece0e3f49740123a9b3ee40acae0f",
+    "https://abhinavnigam99.github.io/sapient/main-es2015.ca25a4fddd09dcf5e4a4.js": "f6de665c303c3b2971b16adde099f64405ae5c9f",
+    "https://abhinavnigam99.github.io/sapient/main-es5.ca25a4fddd09dcf5e4a4.js": "d123258f4cf0e44666eca905121bfd88e4c7847a",
     "https://abhinavnigam99.github.io/sapient/manifest.webmanifest": "9c76b0d28f6053b2bc4641e2481c8949ed7db435",
     "https://abhinavnigam99.github.io/sapient/polyfills-es2015.ffa9bb4e015925544f91.js": "79b2ff5ba292ae9e56f0b43982b9e76d9ddcf285",
     "https://abhinavnigam99.github.io/sapient/polyfills-es5.0290b245fbcca09184ac.js": "a7bfe75cfe39caaf5bc4c64b35dd9f1f0918a25f",
